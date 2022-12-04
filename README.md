@@ -9,15 +9,10 @@ This layer represents the interface between the developer and the low level lang
 The second layer the MCAL Layer:
 
 (The Microcontroller Abstraction Layer) This layer is responsable for the interfaceing with the microcontroller, directly accesses on-chip MCU peripheral modules and external devices that are mapped to memory, and making the upper software layer independent of the MCU. To control this layer every module diivided to 4 files: 
-  
   The Private.h file which used to define the registers addresses used in our project to facilate the programming processes.
-  
   The interface.h file which used to facilate the orders and decisons for this module.
-  
   The config.h file which used to configure and initialize the module to be used by other modules.
-  
   The program.c file which used to set the functions of the module with the help of the other 3 files.
-
 
 The third layer the HAL Layer:
 
