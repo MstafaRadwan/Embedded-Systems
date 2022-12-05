@@ -11,9 +11,9 @@
 #ifndef BIT_MATH_H
 #define BIT_MATH_H
 
-#define setBit(abdou, radwan)    	abdou |=  (1 << radwan)
-#define clrBit(abdou, radwan)  		abdou &= ~(1 << radwan)
-#define toggleBit(abdou, radwan) 	abdou ^=  (1 << radwan)
-#define getValue(abdou, radwan) 	abdou    &(1 << radwan)
+#define setBit(RegisterName, BitNumber)    	RegisterName |=  (1 << BitNumber)
+#define clrBit(RegisterName, BitNumber)  		RegisterName &= ~(1 << BitNumber)
+#define toggleBit(RegisterName, BitNumber) 	RegisterName ^=  (1 << BitNumber)
+#define getValue(RegisterName, BitNumber) 	RegisterName &(1 << BitNumber)
 
 #endif
